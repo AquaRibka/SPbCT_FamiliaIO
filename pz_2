@@ -1,0 +1,300 @@
+//Код 1
+public static void main(String[] args) {
+
+	char symb1=1067;
+	char symb2 ='Ы';
+
+	System.out.println("symb1 contains "+ symb1);
+	System.out.println("symb2 contains "+ symb2);
+}
+//Код 2 
+public static void main(String[] args) {
+
+       char ch = 'J';
+       int intCh = (int) ch;
+
+       System.out.println("J corresponds with "+ intCh);
+}
+//Код 3
+public static void main(String[] args) {
+String s1 = "I have ";
+	String s2 = " apples ";
+	int num = 3;
+	String s = s1 + num + s2;
+
+	System.out.println(s);
+
+}
+//Код 4
+public static void main(String[] args) {
+int i = 35;
+   String str = Integer.toString(i);
+   System.out.println(str);                
+
+}
+//Код 5
+public static void main(String[] args) {
+     double  i = 32.4e10;
+   String str = Double.toString(i);
+   System.out.println(str);                
+
+}
+//Код 6
+public static void main(String[] args) {
+  long  i = 3422222;
+   String str = Long.toString(i);
+   System.out.println(str);                
+
+}
+//Код 7
+public static void main(String[] args) {
+float  i = 3.46f;
+   String str = Float.toString(i);
+   System.out.println(str);      
+
+}
+//Код 8
+public static void main(String[] args) {
+char ch = 'S';
+
+    // c использованием класса Character
+    String charToString = Character.toString(ch);
+    System.out.println(charToString);
+
+}
+//Код 9
+public static void main(String[] args) {
+char ch = 'S';
+
+        // с использованием операции добавления класса String
+        String str = "" + ch;
+        System.out.println(str);
+}
+//Код 10
+public static void main(String[] args) {
+char ch = 'S';
+
+        //с использованием массива
+        String fromChar = new String(new char[] { ch });
+        System.out.println(fromChar);
+}
+//Код 11
+public static void main(String[] args) {
+char ch = 'S';
+
+        // с использованием метода valueOf класса String 
+        String valueOfchar = String.valueOf(ch);
+        System.out.println(valueOfchar);
+}
+//Код 12
+public static void main(String[] args) {
+char ch = '9';
+
+    // c использованием метода getNumericValue
+    // класса Character
+    int i1 = Character.getNumericValue(ch);
+    System.out.println(i1); 
+
+}
+//Код 13
+public static void main(String[] args) {
+char ch = '9';
+
+        // c использованием метода digit класса Character
+        int i2 = Character.digit(ch,10);
+        System.out.println(i2);
+
+}
+//Код 14
+public static void main(String[] args) {
+    int i = 2015;
+    long l = (long) (i);
+    System.out.println(l);
+
+}
+//Код 15
+public static void main(String[] args) {
+int i = 2015;
+    float f = (float) (i);
+    System.out.println(f);
+
+}
+//Код 16
+public static void main(String[] args) {
+long l = 214748364;
+    int i = (int) l;
+    System.out.println(i);
+
+}
+//Код 17
+public static void main(String[] args) {
+    double d = 3.14;
+    int i = (int) d;
+    System.out.println(i);
+
+}
+//Код 18
+public static void main(String[] args) {
+Point p1 = new Point(3,5);
+        Point p2=p1;
+        p1.x=7;
+        System.out.println(p2.x);
+}
+//Код 19
+public static void main(String[] args) {
+Point p1 = new Point(3,5);
+        Point p2=p1;
+        p1 = new Point(7,9);
+        System.out.println(p2.x);
+}
+//Код 20
+public static void main(String[] args) {
+int x= 300000;
+        System.out.println(x*x);
+}
+//Код 21
+public static void main(String[] args) {
+int x= 300000;
+        int i=300000;
+        System.out.println(i*i);   // умножение с точностью 32 бита
+        long m=i;
+        System.out.println(m*m);   // умножение с точностью 64 бита
+        System.out.println(1/(m-i));
+}
+//Код 22
+public static void main(String[] args) {
+System.out.println(1000*60*60*24*7);
+        // вычисление для недели
+        System.out.println(1000*60*60*24*30);
+        // вычисление для месяца
+}
+//Код 23
+public static void main(String[] args) {
+System.out.println(1000*60*60*24*30L);
+        // вычисление для месяца
+}
+//Код 24
+public static void main(String[] args) {
+byte x=5;
+        byte y1=x++;     // на момент начала исполнения x равен 5
+        byte y2=x--;      // на момент начала исполнения x равен 6
+        byte y3=++x;    // на момент начала исполнения x равен 5
+        byte y4=--x;      // на момент начала исполнения x равен 6
+        System.out.println(y1);
+        System.out.println(y2);
+        System.out.println(y3);
+        System.out.println(y4);
+}
+//Код 25
+public static void main(String[] args) {
+byte x=-128;
+        System.out.println(-x);
+
+        byte y=127;
+        System.out.println(++y);
+}
+//Код 26
+public static void main(String[] args) {
+int x=1;
+        System.out.println("x="+x);
+}
+//Код 27
+public static void main(String[] args) {
+System.out.println(1+2+"text");
+        System.out.println("text"+1+2);
+}
+//Код 28
+public static void main(String[] args) {
+ char c='A';
+        System.out.println(c);
+        System.out.println(c+1);
+        System.out.println("c="+c);
+        System.out.println('c'+'='+c);
+}
+//Код 29
+public static void main(String[] args) {
+System.out.println(1e20f*1e20f);
+        System.out.println(-1e200*1e200);
+}
+//Код 30
+public static void main(String[] args) {
+System.out.println(1e-40f/1e10f);   // underflow для float
+        System.out.println(-1e-300/1e100);  // underflow для double
+        float f=1e-6f;
+        System.out.println(f);
+        f+=0.002f;
+        System.out.println(f);
+        f+=3;
+        System.out.println(f);
+        f+=4000;
+        System.out.println(f);
+}
+//Код 31
+public static void main(String[] args) {
+double d = 1e-305 * Math.PI;
+        System.out.println(d);
+        for (int i = 0; i < 4; i++)
+            System.out.println(d /= 100000);
+}
+//Код 32
+public static void main(String[] args) {
+System.out.println(1/2);
+        System.out.println(1/2.);
+}
+//Код 33
+public static void main(String[] args) {
+int x=3;
+        int y=5;
+        System.out.println (x/y);
+        System.out.println((double)x/y);
+        System.out.println(1.0*x/y);
+}
+//Код 35
+public static void main(String[] args) {
+long l=111111111111L;
+        float f = l;
+        l = (long) f;
+        System.out.println(l);
+}
+//Код 36
+public static void main(String[] args) {
+Point p1=new Point(2,3);
+        Point p2=p1;
+        Point p3=new Point(2,3);
+        System.out.println(p1==p2);
+        System.out.println(p1==p3);
+}
+//Код 37
+public static void main(String[] args) {
+String s = "abc";
+        s=s+1;
+        System.out.println(s.equals("abc1"));
+
+}
+//Код 38
+public static void main(String[] args) {
+String s = "abc";
+Class cl=s.getClass();
+System.out.println(cl.getName());
+}
+//Код 39
+public static void main(String[] args) {
+Point p1=new Point(2,3);
+        Point p2=new Point(2,3);
+        System.out.println(p1.equals(p2));
+}
+//Код 40
+public static void main(String[] args) {
+String s1 = "abc";
+        String s2 = "abc";
+        String s3 = "a"+"bc";
+        System.out.println(s1==s2);
+        System.out.println(s1==s3);
+}
+//Код 41
+public static void main(String[] args) {
+String s1="abc";
+        String s2="ab";
+        System.out.println(s1==(s2+"c"));
+}
+
